@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;900&display=swap");
+html,
+body {
+  font-family: 'Noto Sans TC';
+}
+
+.header {
+  background-color: #343a40;
+  padding: 1.5rem 1rem;
+}
+
+.header .body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  max-width: 1140px;
+  height: inherit;
+  margin: 0 auto;
+}
+
+.header .body .logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .body .logo .icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.header .body .logo > h1 {
+  font-size: 1.3rem;
+}
+
+.header .body .hamburger button {
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 0.1rem 0.5rem;
+  font-size: 1.5rem;
+}
+
+.title {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 5rem 1rem;
+}
+
+.title h1,
+.title p {
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.title p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.title .link {
+  text-align: center;
+}
+
+.title .link button {
+  cursor: pointer;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.title .link .btn1 {
+  background-color: #007bff;
+}
+
+.title .link .btn1:hover {
+  background-color: #0063cc;
+}
+
+.title .link .btn2 {
+  background-color: #6c757d;
+}
+
+.title .link .btn2:hover {
+  background-color: #555c62;
+}
+
+.list {
+  background-color: #f8f9fa;
+}
+
+.list ul {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 3rem 0;
+  margin: 0 auto;
+}
+
+.list li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 350px;
+          flex: 0 1 350px;
+  margin: 1rem;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px #ddd;
+          box-shadow: 0 0 10px #ddd;
+}
+
+.card .image {
+  height: 225px;
+  background-color: #55595c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.card .body {
+  padding: 1.5rem;
+}
+
+.card .body p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.card .body .footer {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .body time {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.card .body button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-weight: 300;
+  color: #6c757d;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+}
+
+.card .body button:hover {
+  color: #fff;
+  background-color: #6c757d;
+}
+
+.card .body .link :first-child {
+  border: 1px solid #000;
+  border-radius: 5px 0 0 5px;
+}
+
+.card .body .link :not(:first-child) {
+  border: 1px solid #000;
+  border-left: none;
+}
+
+.card .body .link :last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+footer {
+  padding: 3rem 1rem;
+}
+
+footer .body {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+}
+
+footer .info {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  color: #6c757d;
+  font-weight: 300;
+}
+
+footer .info p {
+  margin-bottom: 1rem;
+}
+
+footer .link {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+
+footer a {
+  font-weight: 300;
+  color: #007bff;
+  text-decoration: none;
+}
