@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2021-05-19-mission</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../bootstrap5/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container py-3">
+      <h2 class="mb-3">Bootstrap grid example</h2>
+      <p>Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
+      <p>
+        In these examples the <code>.themed-grid-col</code> class is added to the columns to add
+        some theming. This is not a class that is available in Bootstrap by default.
+      </p>
+    </div>
+    <div class="container py-3">
+      <h2>Five grid tiers</h2>
+      <p class="lh-base">
+        There are five tiers to the Bootstrap grid system, one for each range of devices we support.
+        Each tier starts at a minimum viewport size and automatically applies to the larger devices
+        unless overridden.
+      </p>
+      <div class="row mb-3">
+        <div class="col-4 bg-primary text-white py-3 border">.col-4</div>
+        <div class="col-4 bg-primary text-white py-3 border">.col-4</div>
+        <div class="col-4 bg-primary text-white py-3 border">.col-4</div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-sm-4 bg-primary text-white py-3 border">.col-sm-4</div>
+        <div class="col-sm-4 bg-primary text-white py-3 border">.col-sm-4</div>
+        <div class="col-sm-4 bg-primary text-white py-3 border">.col-sm-4</div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-4 bg-primary text-white py-3 border">.col-md-4</div>
+        <div class="col-md-4 bg-primary text-white py-3 border">.col-md-4</div>
+        <div class="col-md-4 bg-primary text-white py-3 border">.col-md-4</div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-lg-4 bg-primary text-white py-3 border">.col-lg-4</div>
+        <div class="col-lg-4 bg-primary text-white py-3 border">.col-lg-4</div>
+        <div class="col-lg-4 bg-primary text-white py-3 border">.col-lg-4</div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-xl-4 bg-primary text-white py-3 border">.col-xl-4</div>
+        <div class="col-xl-4 bg-primary text-white py-3 border">.col-xl-4</div>
+        <div class="col-xl-4 bg-primary text-white py-3 border">.col-xl-4</div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-xxl-4 bg-primary text-white py-3 border">.col-xxl-4</div>
+        <div class="col-xxl-4 bg-primary text-white py-3 border">.col-xxl-4</div>
+        <div class="col-xxl-4 bg-primary text-white py-3 border">.col-xxl-4</div>
+      </div>
+    </div>
+    <div class="container py-3">
+      <h2>Three equal columns</h2>
+      <p>
+        Get three equal-width columns
+        <strong>starting at desktops and scaling to large desktops.</strong> On mobile devices,
+        tablets and below, the columns will automatically stack.
+      </p>
+      <div class="row">
+        <div class="col-md-4 bg-primary py-3 text-white border">.col-md-4</div>
+        <div class="col-md-4 bg-primary py-3 text-white border">.col-md-4</div>
+        <div class="col-md-4 bg-primary py-3 text-white border">.col-md-4</div>
+      </div>
+    </div>
+    <div class="container py-3">
+      <h2>Three equal columns alternative</h2>
+      <p>
+        By using the <code>.row-cols-*</code> classes, you can easily create a grid with equal
+        columns.
+      </p>
+      <div class="row row-cols-md-3">
+        <div class="col bg-primary py-3 text-white border">
+          <code>.col</code> Child of <code>.row-cols-md3</code>
+        </div>
+        <div class="col bg-primary py-3 text-white border">
+          <code>.col</code> Child of <code>.row-cols-md3</code>
+        </div>
+        <div class="col bg-primary py-3 text-white border">
+          <code>.col</code> Child of <code>.row-cols-md3</code>
+        </div>
+      </div>
+    </div>
+    <div class="container py-3">
+      <h2>Three unequal columns</h2>
+      <p>
+        Get three columns <strong>starting at desktops and scaling to large desktops</strong> of
+        various widths. Remember, grid columns should add up to twelve for a single horizontal
+        block. More than that, and columns start stacking no matter the viewport.
+      </p>
+      <div class="row">
+        <div class="col-md-3 bg-primary py-3 text-white border">.col-md-3</div>
+        <div class="col-md-6 bg-primary py-3 text-white border">.col-md-6</div>
+        <div class="col-md-3 bg-primary py-3 text-white border">.col-md-3</div>
+      </div>
+    </div>
+    <div class="container py-3">
+      <h2>Two columns</h2>
+      <p>Get two columns starting at <strong>desktops and scaling to large desktops.</strong></p>
+      <div class="row">
+        <div class="col-md-8 bg-primary py-3 text-white border">.col-md-8</div>
+        <div class="col-md-4 bg-primary py-3 text-white border">.col-md-4</div>
+      </div>
+    </div>
+    <div class="container py-3">
+      <h2>Full width, single column</h2>
+      <p class="text-danger">No grid classes are necessary for full-width elements.</p>
+    </div>
+    <div class="container py-3">
+      <h2>Two columns with two nested columns</h2>
+      <p>
+        Per the documentation, nesting is easy—just put a row of columns within an existing column.
+        This gives you two columns
+        <strong>starting at desktops and scaling to large desktops,</strong> with another two (equal
+        widths) within the larger column.
+      </p>
+      <p>
+        At mobile device sizes, tablets and down, these columns and their nested columns will stack.
+      </p>
+      <div class="row">
+        <div class="col-md-8 bg-primary py-3 text-white border">
+          <div class="mb-3">.col-md-8</div>
+          <div class="row">
+            <div class="col-md-6 bg-info py-3 text-white border">.col-md-6</div>
+            <div class="col-md-6 bg-info py-3 text-white border">.col-md-6</div>
+          </div>
+        </div>
+        <div class="col-md-4 bg-primary py-3 text-white border">.col-md-4</div>
+      </div>
+    </div>
+    <div class="container py-3">
+      <h2>Mixed: mobile and desktop</h2>
+      <p>
+        The Bootstrap v4 grid system has five tiers of classes: xs (extra small, this class infix is
+        not used), sm (small), md (medium), lg (large), and xl (extra large). You can use nearly any
+        combination of these classes to create more dynamic and flexible layouts.
+      </p>
+      <p>
+        Each tier of classes scales up, meaning if you plan on setting the same widths for md, lg
+        and xl, you only need to specify md.
+      </p>
+      <div class="row mb-3">
+        <div class="col-md-8 bg-primary py-3 text-white border">.col-md-8</div>
+        <div class="col-6 col-md-4 bg-primary py-3 text-white border">.col-6 .col-md-4</div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-6 col-md-4 bg-primary py-3 text-white border">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4 bg-primary py-3 text-white border">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4 bg-primary py-3 text-white border">.col-6 .col-md-4</div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-6 bg-primary py-3 text-white border">.col-6</div>
+        <div class="col-6 bg-primary py-3 text-white border">.col-6</div>
+      </div>
+    </div>
+    <div class="container py-3">
+      <h2>Mixed: mobile, tablet, and desktop</h2>
+      <div class="row">
+        <div class="col-sm-6 col-lg-8 bg-primary py-3 text-white border">.col-sm-6.col-lg-8</div>
+        <div class="col-sm-6 col-lg-4 bg-primary py-3 text-white border">.col-sm-6.col-lg-4</div>
+      </div>
+    </div>
+    <div class="container py-3">
+      <h2>Gutters</h2>
+      <p>With <code>.gx-*</code> classes, the horizontal gutters can be adjusted.</p>
+      <div class="row row-cols-md-3 gx-4 mb-3">
+        <div class="col bg-primary py-3 text-white border">.col</div>
+        <div class="col bg-primary py-3 text-white border">.col</div>
+        <div class="col bg-primary py-3 text-white border">.col</div>
+        <div class="col bg-primary py-3 text-white border">.col</div>
+        <div class="col bg-primary py-3 text-white border">.col</div>
+        <div class="col bg-primary py-3 text-white border">.col</div>
+      </div>
+      <p>Use the <code>.gy-*</code> classes to control the vertical gutters.</p>
+      <div class="row row-cols-md-3 gy-4 mb-3">
+        <div class="col bg-primary py-3 text-white border">.col</div>
+        <div class="col bg-primary py-3 text-white border">.col</div>
+        <div class="col bg-primary py-3 text-white border">.col</div>
+        <div class="col bg-primary py-3 text-white border">.col</div>
+        <div class="col bg-primary py-3 text-white border">.col</div>
+        <div class="col bg-primary py-3 text-white border">.col</div>
+      </div>
+      <p>With <code>.g-*</code> classes, the gutters in both directions can be adjusted.</p>
+      <div class="row row-cols-md-3 g-4 mb-3">
+        <div class="col bg-primary py-3 text-white border">.col</div>
+        <div class="col bg-primary py-3 text-white border">.col</div>
+        <div class="col bg-primary py-3 text-white border">.col</div>
+        <div class="col bg-primary py-3 text-white border">.col</div>
+        <div class="col bg-primary py-3 text-white border">.col</div>
+        <div class="col bg-primary py-3 text-white border">.col</div>
+      </div>
+    </div>
+    <div class="container py-3">
+      <h2>Containers</h2>
+      <p>
+        Additional classes added in Bootstrap v4.4 allow containers that are 100% wide until a
+        particular breakpoint. v5 adds a new <code>xxl</code> breakpoint.
+      </p>
+    </div>
+    <div class="container bg-info py-3 border border-primary mb-5">.container</div>
+    <div class="container-sm bg-info py-3 border border-primary mb-5">.container-sm</div>
+    <div class="container-md bg-info py-3 border border-primary mb-5">.container-md</div>
+    <div class="container-lg bg-info py-3 border border-primary mb-5">.container-lg</div>
+    <div class="container-xl bg-info py-3 border border-primary mb-5">.container-xl</div>
+    <div class="container-xxl bg-info py-3 border border-primary mb-5">.container-xxl</div>
+    <div class="container-fluid bg-info py-3 border border-primary mb-5">.container-fluid</div>
+  </body>
+</html>
