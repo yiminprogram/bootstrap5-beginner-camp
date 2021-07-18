@@ -47,7 +47,13 @@
               </li>
             </ul>
             <div class="d-flex">
-              <button class="btn btn-primary me-3 px-4 rounded-pill">登入</button>
+              <button
+                class="btn btn-primary me-3 px-4 rounded-pill"
+                data-bs-toggle="modal"
+                data-bs-target="#login"
+              >
+                登入
+              </button>
               <button class="btn btn-outline-secondary px-4 me-3 rounded-pill">註冊</button>
             </div>
           </div>
@@ -55,7 +61,7 @@
       </nav>
     </header>
     <!-- product info -->
-    <div class="py-6 main-info mb-3">
+    <div class="py-4 main-info mb-3">
       <div class="container py-3">
         <div class="row">
           <div class="col-12">
@@ -607,6 +613,36 @@
     <footer class="footer">
       <h2>Copyright &copy; 2021 拼拼 All rights reserve</h2>
     </footer>
+    <div class="modal fade" id="login" tabindex="-1">
+      <div class="modal-dialog pt-6">
+        <div class="modal-content border-0 border-5 border-top border-primary">
+          <div class="modal-header">
+            <h2 class="modal-title fs-3" id="exampleModalLabel">登入</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body px-3 py-2">
+            <div class="mb-3">
+              <label for="name" class="form-label">帳號</label>
+              <input type="text" class="form-control bg-gray2 border-0 p-1" id="name" />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">密碼</label>
+              <input type="password" class="form-control bg-gray2 border-0 p-1" id="name" />
+            </div>
+            <div class="mb-2">
+              <a class="link-secondary text-decoration-none" href="#">忘記密碼？</a>
+            </div>
+            <button type="button" class="btn btn-primary w-100 rounded-pill py-1">登入</button>
+          </div>
+          <div class="modal-footer border-0 mb-2 position-relative">
+            <span class="gray-line"></span>
+            <span class="d-inline-block position-fixed start-50 translate-middle-x bg-white px-1"
+              >沒有帳號？<a href="#" class="link-danger text-decoration-none">註冊一個帳號</a></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="../bootstrap5/js/bootstrap.min.js"></script>
   </body>
 </html>

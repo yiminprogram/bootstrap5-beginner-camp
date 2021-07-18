@@ -148,3 +148,16 @@ body {
   opacity: 1;
   padding-top: 5px;
 }
+.modal-footer {
+  height: 50px;
+}
+
+.gray-line {
+  display: block;
+  background-color: #e8e8db;
+  width: 100%;
+  height: 1px;
+}
+.modal-dialog {
+  padding-top: 132px !important;
+}
